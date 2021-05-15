@@ -1,0 +1,1 @@
+java Produits < C_testTri.dat > C_testTri.res

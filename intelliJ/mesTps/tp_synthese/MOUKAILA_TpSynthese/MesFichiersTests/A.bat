@@ -1,0 +1,1 @@
+java Produits < A_testRegulier.dat > A_testRegulier.res

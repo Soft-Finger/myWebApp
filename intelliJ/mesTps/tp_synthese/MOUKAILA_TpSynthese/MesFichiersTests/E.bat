@@ -1,0 +1,1 @@
+java Produits < E_testSupression.dat > E_testSupression.res

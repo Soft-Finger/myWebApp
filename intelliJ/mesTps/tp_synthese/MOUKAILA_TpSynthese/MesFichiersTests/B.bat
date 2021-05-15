@@ -1,0 +1,1 @@
+java Produits < B_testAjout.dat > B_testAjout.res

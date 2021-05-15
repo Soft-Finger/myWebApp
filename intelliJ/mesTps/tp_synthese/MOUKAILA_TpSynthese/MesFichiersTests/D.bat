@@ -1,0 +1,1 @@
+java Produits < D_testModification.dat > D_testModification.res
