@@ -50,7 +50,6 @@ public class Game {
     }
 
     public int nbButEncaissesTeam ( Team team ) {
-
         int nombreButEncaisser = 0;
         for ( int i = 0; i < this.listeButs.size(); i++ ) {
             if ( this.listeButs.get( i ).getIDTeamEcaisseur() == team.getID() ) {
