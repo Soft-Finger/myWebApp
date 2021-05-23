@@ -50,9 +50,6 @@ public class LinkedList {
             node.next = n.next;
             n.next = node;
         }
-
-
-
     }
 }
 
