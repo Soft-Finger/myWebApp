@@ -19,26 +19,28 @@ class InsererPrenom {
         System.out.println("\nAvant l'insertion");
         afficherPrenoms(prenoms);
 
-        // Ajoutez ci-dessous le code pour insérer le prénom.
 
-        /*public static void insertion(String s, int n) {
-            for(int i = 0; i < prenoms.length; i++) {
-                if(prenoms[i].equals(n)) {
-                    prenoms[i] = s;
-                    break;
-                }
-            }
-        }*/
 
         // Affichage des prénoms de la liste à la fin.
         System.out.println("\nAprès l'insertion");
-        //afficherPrenoms(prenoms2);
+        afficherPrenoms(prenoms);
+    }
+
+    // Ajoutez ci-dessous le code pour insérer le prénom.
+
+    public static void insertion(String[] prenoms, String n) {
+        for(int i = 0; i < prenoms.length; i++) {
+            if(prenoms[i].equals(n)) {
+                prenoms[i] = n;
+                break;
+            }
+        }
     }
 
     // Fonction qui permet d'afficher la liste des prénoms d'un tableau reçu en paramètre.
     public static void afficherPrenoms(String[] tab) {
-        for (int i = 0; i < tab.length; i++)
-            System.out.print(tab[i] + " ");
+        for ( String s : tab )
+            System.out.print( s + " " );
         System.out.println();
     }
 }

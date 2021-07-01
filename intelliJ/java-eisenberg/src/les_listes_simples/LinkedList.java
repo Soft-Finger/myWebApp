@@ -1,7 +1,7 @@
 package les_listes_simples;
 
 public class LinkedList {
-    Node first;
+    private Node first;
 
     public void insert(int data) {
         Node node = new Node();
@@ -34,6 +34,19 @@ public class LinkedList {
         node.next = first;
         first = node;
     }
+
+   /* public void insertFirstElement(Object o) throws IllegalArgumentException {
+        if (o == null) {
+            throw new IllegalArgumentException("Impossible");
+        } else {
+            if (isEmpty()) {
+                first = new Node(o, null);
+            } else {
+                first = new Node(0, first);
+            }
+            return;
+        }
+    }*/
 
     public void insertAt(int index, int data) {
         Node node = new Node();

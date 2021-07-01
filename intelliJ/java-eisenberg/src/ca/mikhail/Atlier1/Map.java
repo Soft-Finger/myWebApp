@@ -14,12 +14,13 @@ public class Map {
         double[] test = fusion(d, r);
 
         for (int i = 0; i < test.length; i++) {
-            System.out.println(test[i]);
+            System.out.println(test[i] + " ");
         }
 
         System.out.printf("x: %.1f\n", point);
     }
-    /*static double[] moveTo(double[] p){
+    /**
+     * static double[] moveTo(double[] p){
          p = new double[2];
          double i = 0.0;
          double[] points = new double[2];
@@ -32,7 +33,8 @@ public class Map {
                }
            }
         return  points;
-    }*/
+    }
+     */
 
     static double moveTo(double x, double y) {
         double random = ((Math.random() * (MAX - MIN) + 1) + MIN);

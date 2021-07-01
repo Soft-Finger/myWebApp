@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class ReadPriceList {
     public static void main ( String[] args ) throws FileNotFoundException {
-        final double TAX_RATE = 0.05;
+       /* final double TAX_RATE = 0.05;
         double subtotal = 0.0;
         int nItems = 0;
 
@@ -22,6 +22,7 @@ public class ReadPriceList {
                 subtotal += price;
                 nItems++;
             }
+
             // close Scanner
             input.close ();
 
@@ -35,7 +36,17 @@ public class ReadPriceList {
             System.out.println ("file no found");
         } catch ( InputMismatchException ex ) {
             System.out.println ("Bad data in file");
-        }
+        }*/
 
+        System.out.println(add(4));
+
+    }
+
+    public static int add(int multiple) {
+        int res = 1;
+        for ( int i = 1; i < multiple; i++ ) {
+           res *= i;
+        }
+        return res;
     }
 }
